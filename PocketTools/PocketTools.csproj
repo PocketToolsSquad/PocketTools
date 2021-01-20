@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+    <Version>0.8.1.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>utilities</PackageTags>
+    <Company />
+    <Copyright>© 2021 PocketTools team</Copyright>
+    <Description>General-purpose static and extension methods</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>PocketTools.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/Gaslite/PocketTools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Gaslite/PocketTools</RepositoryUrl>
+    <AssemblyVersion>0.8.1.0</AssemblyVersion>
+    <FileVersion>0.8.1.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="PocketTools.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

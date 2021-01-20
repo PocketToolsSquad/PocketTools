@@ -1,0 +1,23 @@
+name: Publish NuGet
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.102
+    - name: Build
+      run: dotnet build --configuration release
+    - name: Package
+      run: dotnet pack --configuration release 
+    - name: Publish
+      run: dotnet nuget push **.nupkg --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
+
